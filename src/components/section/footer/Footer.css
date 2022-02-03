@@ -1,0 +1,28 @@
+.footer{
+    display: flex;
+    background-color: #F3852E ;
+    color:#fff;
+    font-size: small;
+    height: 15vh;
+    border-radius:5px;
+
+}
+.credit{
+    display: flex;
+   
+}
+.contact img{
+    height:20px;
+}
+.errands{
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+}
+.contact{
+    display: flex;
+    flex-direction: column;
+    margin:20px;
+    
+}

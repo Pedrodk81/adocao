@@ -1,0 +1,70 @@
+:root{
+    --Footer-height:100px;
+    --aside-width: 50px;
+    --logo-width: 50px; 
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+button{
+    background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
+.custom_buttons{
+    background: #F3852E;
+    width: 100%;
+    color:#fff;
+    border-radius: 5px;
+    padding:2vh;
+    margin-right: 15px;
+    box-shadow: 1px 1px 0px 0px rgb(204, 204, 204)
+}
+.custom_buttons:hover{
+    background-color:#f7a86d;
+}
+.custom_buttons:active{
+    box-shadow: 1px 1px 0px 0px #302f2f;
+}
+
+
+html{
+    padding:24px;
+    font-family: 'Poppins', sans-serif;
+    color:#F3852E;
+    
+}
+.app{
+    margin: 0px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 
+    var(--logo-height)
+    1fr
+    var(--Footer-height);
+    grid-template-areas:
+    'logo logo logo'
+    'main main main'
+    'footer footer footer';
+   
+}
+aside.logo{
+    grid-area: logo;
+}
+div.navegacao{
+    grid-area: nav;
+}
+div.main{
+    grid-area: main;
+}
+div.footer{
+    grid-area: footer;
+}

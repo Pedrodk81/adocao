@@ -1,0 +1,14 @@
+div.navegacao{
+    display: flex;
+    justify-content: space-around;
+    align-items:center;  
+}
+.navigation_anchors{
+    display: flex;
+    justify-content:space-around;
+}
+a.ancoras{
+    margin:10px;
+    text-decoration:inherit;
+    color:inherit;
+}

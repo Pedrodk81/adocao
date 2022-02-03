@@ -1,0 +1,20 @@
+.signup_component{
+    margin:30px;
+    padding:50px;
+    display: flex;
+    background-color: #f5a263;
+    color:#fff;
+    height:500px;
+    border-radius:10px;
+}
+.formulario{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+    'nome  sobrenome'
+    'email confirm_email'
+    'senha confirm_senha'
+    'rg cpf';
+    height: 75%;
+}

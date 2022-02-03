@@ -1,0 +1,21 @@
+.principal{
+    display: flex;
+}
+.title_banner{
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+.banner_content{
+    text-align:justify;
+}
+.apadrinhar{
+    margin-right: 2vh;
+    border-radius: 1px solid #F3852E;
+}
+a{
+    text-decoration: inherit;
+    color: inherit
+}
+.divulgue{
+    margin-right:2vh
+}
