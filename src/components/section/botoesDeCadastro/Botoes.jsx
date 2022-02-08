@@ -9,12 +9,12 @@ export default class Botoes extends Component {
         return (
             <div className="login">
                 <div className="intermediaria">
-                    <Link  to="/signup" >
+                    <Link  to="/login" >
                         <button className="buttons_nav" type="button" >
                             Entre
                         </button>
                     </Link >
-                    <Link  to="/login" >
+                    <Link  to="/signup" >
                         <button className="buttons_nav" type="button" >
                             Cadastre-se
                         </button>
