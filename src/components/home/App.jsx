@@ -1,4 +1,4 @@
-import React, { useState }from "react";
+import React, { useState } from "react";
 
 import {
     BrowserRouter as Router,
@@ -7,7 +7,7 @@ import {
     Link,
     useLocation
 } from "react-router-dom";
-  
+
 import './App.css'
 
 import Logo from '../section/logo/Logo'
@@ -17,11 +17,11 @@ import Nav from '../section/nav/Nav'
 import LoginPage from "../../pages/login/LoginPage"
 import Register from "../../pages/register/Register"
 
-function Navigate({children}) {
+function Navigate({ children }) {
     let classRoot;
     const { pathname } = useLocation();
 
-    switch(pathname) {
+    switch (pathname) {
         case '/':
             classRoot = 'app'
             break;
@@ -46,20 +46,21 @@ function Navigate({children}) {
 export default function App() {
     return (
         <>
-            <Router>
-                <Navigate>
-                    <Logo />
-                    {/* <Nav /> */}
-                    <Routes> 
-                        <Route path="/" element={ <Main /> }/>
-                        <Route path="/login" element={ <LoginPage /> }/>
-                        <Route path="/signup" element={ <Register /> }/>
-                    </Routes>
-                </Navigate>
-            </Router>
-            <Footer />
+
+            
+                <Router>
+                    <Navigate>
+                        <Logo />
+                        {/* <Nav /> */}
+                        <Routes>
+                            <Route path="/" element={<Main />} />
+                            <Route path="/login" element={<LoginPage />} />
+                            <Route path="/signup" element={<Register />} />
+                        </Routes>
+                    </Navigate>
+                </Router>
+                <Footer />
         </>
     )
 }
 
-   

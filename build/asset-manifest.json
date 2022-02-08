@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.605c565b.css",
-    "main.js": "/static/js/main.9bb2ee36.js",
-    "static/js/787.dd92c29b.chunk.js": "/static/js/787.dd92c29b.chunk.js",
-    "static/media/d4c74593-3370-445d-9b99-16c95f891c3c.png": "/static/media/d4c74593-3370-445d-9b99-16c95f891c3c.cf932da6101384696101.png",
-    "static/media/jpg": "/static/media/ff1491d605c4dd2d6b7d9e572ae03322.ab3f7b24a9d79f5006b7.jpg",
-    "static/media/instagram.png": "/static/media/instagram.419ae0f54cd1bb1906fb.png",
-    "static/media/github.png": "/static/media/github.b94e33015e19c0145f12.png",
-    "index.html": "/index.html",
-    "main.605c565b.css.map": "/static/css/main.605c565b.css.map",
-    "main.9bb2ee36.js.map": "/static/js/main.9bb2ee36.js.map",
-    "787.dd92c29b.chunk.js.map": "/static/js/787.dd92c29b.chunk.js.map"
+    "main.css": "/adocao/static/css/main.605c565b.css",
+    "main.js": "/adocao/static/js/main.13d9b522.js",
+    "static/js/787.dd92c29b.chunk.js": "/adocao/static/js/787.dd92c29b.chunk.js",
+    "static/media/d4c74593-3370-445d-9b99-16c95f891c3c.png": "/adocao/static/media/d4c74593-3370-445d-9b99-16c95f891c3c.cf932da6101384696101.png",
+    "static/media/jpg": "/adocao/static/media/ff1491d605c4dd2d6b7d9e572ae03322.ab3f7b24a9d79f5006b7.jpg",
+    "static/media/instagram.png": "/adocao/static/media/instagram.419ae0f54cd1bb1906fb.png",
+    "static/media/github.png": "/adocao/static/media/github.b94e33015e19c0145f12.png",
+    "index.html": "/adocao/index.html",
+    "main.605c565b.css.map": "/adocao/static/css/main.605c565b.css.map",
+    "main.13d9b522.js.map": "/adocao/static/js/main.13d9b522.js.map",
+    "787.dd92c29b.chunk.js.map": "/adocao/static/js/787.dd92c29b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.605c565b.css",
-    "static/js/main.9bb2ee36.js"
+    "static/js/main.13d9b522.js"
   ]
 }
