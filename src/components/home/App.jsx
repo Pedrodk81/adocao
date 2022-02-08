@@ -53,7 +53,7 @@ export default function App() {
                         <Logo />
                         {/* <Nav /> */}
                         <Routes>
-                            <Route path="/" element={<Main />} />
+                            <Route path="/adocao" element={<Main />} />
                             <Route path="/login" element={<LoginPage />} />
                             <Route path="/signup" element={<Register />} />
                         </Routes>
