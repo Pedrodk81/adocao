@@ -7,9 +7,11 @@ import {
     useLocation
 } from "react-router-dom";
 
+import 'react-loading-skeleton/dist/skeleton.css'
+
 import './App.css'
 
-import Logo from '../section/logo/Logo'
+import Nav from '../section/logo/Logo'
 import Main from '../section/main/Main'
 import Footer from '../section/footer/Footer'
 import LoginPage from "../../pages/login/LoginPage"
@@ -44,20 +46,15 @@ function Navigate({ children }) {
 export default function App() {
     return (
         <>
-
-            
-                <Router>
-                    <Navigate>
-                        <Logo />
-                        {/* <Nav /> */}
-                        <Routes>
-                            <Route path="/" element={<Main />} />
-                            <Route path="/login" element={<LoginPage />} />
-                            <Route path="/signup" element={<Register />} />
-                        </Routes>
-                    </Navigate>
-                </Router>
-                <Footer />
+            <Router>
+                <Nav />
+                <Routes>
+                    <Route path="/" element={<Main />} />
+                    <Route path="/login" element={<LoginPage />} />
+                    <Route path="/signup" element={<Register />} />
+                </Routes>
+            </Router>
+            <Footer />
         </>
     )
 }

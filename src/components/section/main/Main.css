@@ -1,60 +1,173 @@
-main{
+/* main{
     padding: 24px;
     font-family: 'Poppins', sans-serif;
-}
-.img_highlight img{
-    height:236px;
-    width:1200px;
-    border-radius:20px;
-    padding-bottom: 3vh;
-}
-.img_highlight{
-    display:flex;
-    justify-content:center;
-}
-.carousel{
-    display: block;
+} */
+.slick-arrow {
+    z-index: 3;
 }
 
-.carousel_organization{
-    padding-top:3vh;
+#ef-banner {
+    z-index: 1;
+}
+#ef-banner img{
+    height:460px;
+    width: 100%;
+}
+#ef-banner .slick-dots {
+    bottom: 15px;
+}
+#ef-banner .slick-arrow {
+    width: 40px;
+    height: 40px;
     display: flex;
-    justify-content:center;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
+    position: absolute;
+    border: 1px solid var(--ef-background-theme);
+    font-size: 0;
+    background: none;
+    overflow: hidden;
+}
+#ef-banner .slick-arrow:before {
+    width: 8px;
+    height: 8px;
+    display: block;
+    content: "";
+    border-right: 2px solid var(--ef-background-theme); 
+    border-bottom: 2px solid var(--ef-background-theme); 
+}
+#ef-banner .slick-arrow:after {
+    width: 0;
+    height: 100%;
+    display: block;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: var(--ef-color-theme);
+    transition: all 0.2s ease-out;
+    z-index: 1;
+}
+#ef-banner .slick-arrow:hover:after {
+    width: 100%;
+    border-right: 2px solid var(--ef-color-theme); 
+    border-bottom: 2px solid var(--ef-color-theme); 
+}
+#ef-banner .slick-arrow:hover:before {
+    z-index: 3;
+}
+#ef-banner  .slick-arrow.slick-next {
+    /* top: calc(50% - 20px); */
+    right: 360px;
+}
+#ef-banner   .slick-arrow.slick-next:before {
+    transform: rotate(-45deg);
+    margin-left: 10px;
+}
+#ef-banner .slick-arrow.slick-prev {
+    left: 360px;
 }
 
-.carousel_organization .card-box{
+#ef-banner   .slick-arrow.slick-prev:before {
+    transform: rotate(135deg);
+    margin-left: 14px;
+}
+
+
+#ef-random-card h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+#ef-random-card .card-grid > .card,
+#ef-breeds-category .card-grid > .card  {
+    margin-left: 12px;
+}
+#ef-random-card .card-grid,
+#ef-breeds-category .card-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    gap: 10px;
+    gap: 20px;
+    animation: fadeIn 0.4s ease;
 }
 
-.navigation_anchors{
+#ef-random-card .card,
+#ef-breeds-category .card {
+    height: 320px;
+    width: 220px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 70px 63px -60px #00000085;
     display: flex;
-    justify-content:space-around
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
 }
-.title_description{
-    padding-top:2vh;
+
+#ef-random-card .card img,
+#ef-breeds-category .card img {
+    width: 220px;
+    height: 320px;
+    transition: transform 0.5s ease, -webkit-transform 0.5s ease;
 }
-.search_button{
+
+#ef-random-card .card img:hover,
+#ef-breeds-category .card img:hover {
+    transform: scale(1.05);
+}
+
+#ef-breeds-category .category {
+    margin-bottom: 40px;
+}
+
+#ef-breeds-category h2,
+#ef-why-adopt h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+#ef-why-adopt .box-adopt {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 440px;
+    gap: 20px;
+    padding: 10px;
+    height: 400px;
+}
+
+#ef-why-adopt .box-adopt .card-adopt{
+    background-color: var(--color-gray-lighter);
+    border-radius: 10px;
+    padding: 15px;
+}
+
+#ef-why-adopt .card-adopt img {
+    height: 320px;
+    width: 220px;
+    border-radius: 10px;
+}
+
+#ef-why-adopt .box-adopt .card-text{
+    font-size: 14px;
+    background-color: var(--btn-primary-color);
+    border-radius: 10px;
+    padding: 20px;
+    color: var(--ef-background-theme);
     display: flex;
-    justify-content:center;
-    padding:10vh
+    flex-direction: column;
+    justify-content: space-around;
+
 }
 
-@media (max-width: 912px) {
-    .carousel_organization .card-box{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        gap: 10px;
-    }
+#ef-why-adopt .box-adopt .card-text{
+    color: var(-color-darkest);
 }
 
-@media (max-width: 700px) {
-    .carousel_organization .card-box{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        gap: 10px;
-    }
+#ef-why-adopt .box-adopt .card-text div{
+    font-size: 50px;
+    margin-bottom: 20px;
 }
+
+@keyframes fadeIn {
+    0% { opacity: 0 ;}
+    100% { opacity: 1 ;}
+  }

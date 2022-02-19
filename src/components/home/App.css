@@ -1,9 +1,8 @@
-:root{
+/* :root{
     --Footer-height:100px;
     --aside-width: 50px;
     --logo-width: 50px; 
 }
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 html {
     scroll-behavior: smooth;
@@ -33,16 +32,10 @@ button{
 }
 .custom_buttons:active{
     box-shadow: 1px 1px 0px 0px #302f2f;
-}
+} */
 
 
-html{
-    padding:24px;
-    font-family: 'Poppins', sans-serif;
-    color:#F3852E;
-    
-}
-.app{
+/* .app{
     margin: 0px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -55,8 +48,8 @@ html{
     'main main main'
     'footer footer footer';
    
-}
-aside.logo{
+} */
+/* aside.logo{
     grid-area: logo;
 }
 div.navegacao{
@@ -67,4 +60,4 @@ div.main{
 }
 div.footer{
     grid-area: footer;
-}
+} */
